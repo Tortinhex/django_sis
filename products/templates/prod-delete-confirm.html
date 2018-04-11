@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos</title>
+    </head>
+
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            <h2>Você tem certeza que quer deletar {{ product.description }} ?</h2>
+            <button type="submit">Confirm</button>
+        </form>
+    </body>
+</html>
